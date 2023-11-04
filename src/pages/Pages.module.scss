@@ -1,0 +1,49 @@
+@use "../sass/mixins" as *;
+
+.body {
+	display: flex;
+	flex-direction: column;
+	max-width: 71vw;
+	padding: 40px 50px;
+	align-items: center;
+	gap: 30px;
+}
+
+.hint {
+	@include text($size: 1.5rem);
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.message {
+	@include message;
+}
+
+@media screen and (min-width: 1250px) {
+	.body {
+		display: grid;
+		max-width: 71vw;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 30px;
+		padding: 40px 0;
+		justify-items: center;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.body {
+		max-width: 75vw;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 2300px) {
+	.body {
+		max-width: 80vw;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}

@@ -1,0 +1,26 @@
+@use "../../../sass/mixins" as *;
+
+.button {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 0;
+}
+
+.button:focus {
+	outline: 0;
+}
+
+.iconText {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.88rem;
+}
+
+.text {
+	@include text($cursor: pointer);
+}
+
+.logout {
+	color: #908c89;
+}

@@ -1,0 +1,13 @@
+/node_modules
+/.vscode
+
+.env
+.env.production
+jest.config.js
+
+# Because of testing problems with scss,
+# tests will be rewritten in to seperate files!
+# one file for scss unit test and one file for javascript unit test!
+/__mocks__
+/test
+*/**/*.test.tsx

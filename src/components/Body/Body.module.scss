@@ -1,0 +1,57 @@
+@use "../../sass/mixins" as *;
+@use "../../sass/variables" as var;
+
+.header {
+	position: absolute;
+	right: 2.5vw;
+	width: 71vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 33px;
+}
+
+.title {
+	@include text(3rem);
+
+	max-width: 57vw;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+ 
+.children {
+	position: absolute;
+	top: 248px;
+	right: 2.5vw;
+	bottom: 30px;
+	width: 71vw;
+	background-color: var.$white;
+	border-radius: 8px;
+}
+
+@media screen and (min-width:1440px) {
+	.header {
+		width: 75vw;
+	}
+ 
+	.children {
+		width: 75vw;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.header {
+		width: 80vw;
+	}
+ 
+	.children {
+		width: 80vw;
+	}
+}

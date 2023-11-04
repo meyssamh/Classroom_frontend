@@ -1,0 +1,15 @@
+@use "../../../sass/mixins" as *;
+
+.tag {
+	display: inline-flex;
+	width: 398px;
+	padding: 2px 2px 2px 20px;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 12px;
+	background: #f3f3f3;
+}
+
+.text {
+	@include text;
+}

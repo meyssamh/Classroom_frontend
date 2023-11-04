@@ -1,0 +1,12 @@
+@use "../../../../sass/mixins" as *;
+
+.name {
+	@include text($size: 0.875rem);
+	
+	padding: 0 0 0 13px;
+}
+
+.icon {
+	text-align: center;
+	padding: 1px 0 0 0;
+}

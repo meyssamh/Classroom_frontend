@@ -1,0 +1,58 @@
+@use "../../sass/mixins" as *;
+@use "../../sass/variables" as var;
+
+.modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 563px;
+	flex-shrink: 0;
+	border-radius: 16px;
+	background: var.$white;
+	box-shadow: 0px 12px 30px 0px #00000040;
+}
+
+.title {
+	@include text($size: 1.25rem);
+
+	display: inline-block;
+	padding: 30px 0;
+}
+
+.line {
+	width: 503px;
+	height: 2px;
+	background-color: var.$whitesmoke;
+}
+
+.input {
+	width: 503px;
+	float: left;
+}
+
+.required {
+	@include text($size: 0.875rem, $weight: 400);
+
+	margin: 40px 0;
+}
+
+.question {
+	@include text;
+
+	align-self: flex-start;
+	margin: 30px;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 30px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.action {
+	margin-right: 30px;
+}

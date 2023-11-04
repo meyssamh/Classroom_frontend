@@ -1,0 +1,36 @@
+@use "../../../sass/mixins" as *;
+@use "../../../sass/variables" as var;
+
+.snackbar {
+	display: inline-flex;
+	padding: 0.8125rem 1.25rem;
+	align-items: center;
+	gap: 0.625rem;
+	border-radius: 1.25rem;
+	position: relative;
+	z-index: 5;
+	opacity: 0;
+	animation: fadeinout 5s ease-in-out forwards;
+}
+
+.successSnackbar {
+	background-color: var.$blue;
+}
+
+.errorSnackbar {
+	background-color: var.$danger;
+}
+
+@keyframes fadeinout {
+
+	20%,
+	80% {
+		opacity: 1;
+	}
+}
+
+.text {
+	@include text;
+
+	color: var.$white;
+}

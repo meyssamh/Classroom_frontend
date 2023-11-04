@@ -1,0 +1,5 @@
+@use "../../../sass/mixins" as *;
+
+.header {
+	@include text($size: 0.875rem);
+}

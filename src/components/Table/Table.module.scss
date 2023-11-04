@@ -1,0 +1,21 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    cursor: default;
+}
+
+.table tr {
+    max-height: 35px;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:hover {
+    background-color: #dddddd;
+}
+
+.table thead tr:hover {
+    background-color: #dddddd;
+}

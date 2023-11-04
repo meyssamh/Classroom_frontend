@@ -1,0 +1,36 @@
+@use "../../../sass/mixins" as *;
+@use "../../../sass/variables" as var;
+
+.button {
+	@include text($cursor: pointer);
+
+	background-color: var.$blue;
+	padding: 10px 20px;
+	border-radius: 12px;
+	outline: 0;
+	border: 0;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.slim {
+	color: #ffffff;
+	padding: 0.3125rem 1rem;
+}
+
+.text {
+	@include text($weight: 400, $cursor: pointer);
+
+	color: var.$darkgray;
+	background-color: transparent;
+	outline: 0;
+	border: 0;
+
+	&:disabled {
+		color: #f3f3f3;
+		cursor: not-allowed;
+	}
+
+}

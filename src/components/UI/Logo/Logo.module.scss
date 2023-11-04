@@ -1,0 +1,23 @@
+@use "../../../sass/mixins" as *;
+
+.logo {
+	display: inline-flex;
+	align-items: center;
+	background-color: transparent;
+	gap: 0.94rem;
+}
+
+.icon {
+	display: none;
+}
+
+.iconText {
+	@include text($size: 1.5rem);
+}
+
+@media screen and (min-width:1024px) {
+	.icon {
+		display: block;
+		width: 54px;
+	}
+}

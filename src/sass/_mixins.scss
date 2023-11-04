@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+@mixin font($size: 1rem, $weight: 700) {
+	font: {
+		size: $size;
+		weight: $weight;
+	}
+}
+
+@mixin text($size: 1rem, $weight: 700, $cursor: default) {
+	@include font($size, $weight);
+
+	color: $success;
+	margin: 0;
+	cursor: $cursor;
+	user-select: none;
+}
+
+@mixin message {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}

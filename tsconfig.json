@@ -1,0 +1,52 @@
+{
+	"compilerOptions": {
+		"target": "ES2017",
+		"lib": [
+			"dom",
+			"ESNext"
+		],
+		"jsx": "react",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"paths": {
+			"^/*": [
+				"./src/hoc/*"
+			],
+			"@/*": [
+				"./src/*"
+			],
+			"$/*": [
+				"./types/*"
+			],
+			"#/*": [
+				"./public/assets/*"
+			],
+		},
+		"allowJs": true,
+		"outDir": "./dist/",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noImplicitReturns": true,
+		"skipLibCheck": true
+	},
+	"include": [
+		"src",
+		"types",
+		"types/fileType.d.ts"
+	],
+	"exclude": [
+		"**/*.test.ts",
+		"**/*.test.tsx",
+		"/node_modules/*",
+	]
+}

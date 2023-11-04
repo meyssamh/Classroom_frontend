@@ -1,0 +1,82 @@
+@use "../../../sass/mixins" as *;
+@use "../../../sass/variables" as var;
+
+.inputContainer {
+	position: relative;
+	width: 100%;
+	margin-top: 1.875rem;
+}
+
+.input {
+	@include font($size: 1rem, $weight: 400);
+
+	width: 92%;
+	height: 32px;
+	border-radius: 16px;
+	border: 0;
+	outline: 0;
+	padding: 0.81rem 1.25rem;
+	color: var.$darkgray;
+	background-color: var.$whitesmoke;
+
+	&:focus {
+		color: var.$success;
+
+		&~.label {
+			color: var.$success;
+		}
+	}
+
+	&:not(:placeholder-shown) {
+		&~.label {
+			color: var.$darkgray;
+		}
+	}
+}
+
+.background {
+	@include text($size: 0.75rem, $weight: 400);
+
+	position: absolute;
+	top: -1.25rem;
+	left: 20px;
+	transform: translateY(0);
+	transition: transform 200ms;
+	color: var.$white;
+	background-color: var.$white;
+	border-radius: 16px;
+	padding: 2px 13px 2px 8px;
+}
+
+.input:focus~.background,
+.input:not(:placeholder-shown)~.background {
+	transform: translateY(8px);
+}
+
+.label {
+	position: absolute;
+	top: 1.4rem;
+	left: 1.25rem;
+	color: var.$darkgray;
+	line-height: 14px;
+	pointer-events: none;
+	transform-origin: 0 50%;
+	transition: transform 200ms, color 200ms;
+}
+
+.input:focus~.label,
+.input:not(:placeholder-shown)~.label {
+	transform: translateY(-30px) translateX(8px) scale(0.82);
+}
+
+.labelError {
+	color: var.$danger !important;
+}
+
+.error {
+	@include font($size: 0.75rem, $weight: 400);
+
+	position: absolute;
+	color: var.$danger;
+	margin: 5px 0 0 0;
+}

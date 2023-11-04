@@ -1,0 +1,15 @@
+@use "../../../sass/mixins" as *;
+@use "../../../sass/variables" as var;
+
+.background {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	gap: 15px;
+	border-radius: 12px;
+	background: var.$whitesmoke;
+}
+
+.text {
+	@include text;
+}

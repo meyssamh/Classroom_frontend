@@ -1,0 +1,12 @@
+@use "../../../sass/mixins" as *;
+
+.user {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.9375rem;
+}
+
+.fullname {
+	@include text($size: 1.125rem);
+}

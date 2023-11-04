@@ -1,0 +1,35 @@
+@use "../../sass/variables" as var;
+
+.header {
+	display: inline-flex;
+	position: absolute;
+	padding: 39px 0;
+	top: 0;
+	right: 0;
+	width: 76.8vw;
+	margin: 0;
+	justify-content: space-around;
+	gap: 30vw;
+	align-items: center;
+	background-color: var.$white;
+}
+
+@media screen and (min-width: 1000px) {
+	.header {
+		gap: 40vw;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.header {
+		width: 79.8vw;
+		gap: 50vw;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.header {
+		width: 84.8vw;
+		gap: 60vw;
+	}
+}

@@ -1,0 +1,144 @@
+@use "../../sass/mixins" as *;
+@use "../../sass/variables" as var;
+
+.image {
+	position: fixed;
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+}
+
+.logo {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	gap: 10vh;
+	margin: 15vh 7vw;
+}
+
+.note {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	width: 531px;
+	padding: 50px;
+	border-radius: 8px;
+	background-color: var.$white;
+	z-index: 1;
+}
+
+.welcome {
+	@include text($size: 3rem);
+
+	text-align: center;
+}
+
+.text {
+	@include text($size: 1.5rem);
+
+	width: 462px;
+	text-align: center;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 603px !important;
+	height: 981px;
+	border-radius: 8px;
+	background-color: var.$white;
+	z-index: 1;
+}
+
+.title {
+	@include text($size: 3rem);
+
+	width: 100%;
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.line {
+	width: 503px;
+	height: 2px;
+	background-color: var.$whitesmoke;
+}
+
+.form {
+	width: 504px;
+}
+
+.input {
+	padding-top: 10px;
+}
+
+.password {
+	padding-top: 10px;
+}
+
+.required {
+	@include text($size: 0.875rem, $weight: 400);
+
+	display: inline-block;
+	margin: 40px 0;
+}
+
+.button {
+	width: 100%;
+}
+
+.link {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.a {
+	@include text($cursor: pointer);
+
+	text-decoration: none;
+}
+
+.message {
+	@include message;
+}
+
+@media screen and (min-width: 1300px) {
+	.main {
+		flex-direction: row;
+		gap: 5vw;
+		margin: 15vh 2vw;
+	}
+
+	.note {
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.main {
+		gap: 10vw;
+	}
+
+	.note {
+		width: 531px;
+	}
+
+	.welcome {
+		white-space: nowrap;
+	}
+}

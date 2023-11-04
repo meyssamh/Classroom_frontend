@@ -1,0 +1,51 @@
+@use "../../../sass/mixins" as *;
+@use "../../../sass/variables" as var;
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2px 2px 2px 20px;
+	width: 398px;
+	height: 32px;
+	border-radius: 12px;
+	cursor: pointer;
+	border: 0;
+
+	&:focus {
+		outline: 0;
+	}
+
+}
+
+.absent {
+	background-color: var.$danger;
+}
+
+.present {
+	background-color: var.$blue;
+}
+
+.unresolved {
+	background-color: #f3f3f3;
+	cursor: default;
+}
+
+.text {
+	@include text;
+}
+
+.fullname {
+	color: var.$success;
+}
+
+.situation {
+	color: var.$white;
+	padding: 5px 15px 5px 5px;
+}
+
+.buttons {
+	display: inline-flex;
+	align-items: center;
+	gap: 20px;
+}

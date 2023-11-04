@@ -1,0 +1,41 @@
+@use "../sass/mixins" as *;
+@use "../sass/variables" as var;
+
+.body {
+	width: 100vw;
+	height: 100vh;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.message {
+	width: 538px;
+	height: 339px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var.$white;
+	border-radius: 8px;
+	padding: 90px 65px;
+}
+
+.title {
+	@include text($size: 3rem);
+
+	text-align: center;
+	color: var.$danger;
+
+	& p {
+		margin: 0;
+	}
+}
+
+.link {
+	@include text($size: 2rem, $cursor: pointer);
+
+	text-decoration: none;
+	text-align: center;
+	color: var.$success;
+}

@@ -1,0 +1,87 @@
+@use "../../sass/mixins" as *;
+@use "../../sass/variables" as var;
+
+.image {
+	position: fixed;
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 1024px;
+}
+
+.logo {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 603px;
+	height: 589px;
+	border-radius: 8px;
+	background-color: var.$white;
+	z-index: 1;
+}
+
+.title {
+	@include text($size: 3rem);
+
+	width: 100%;
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.line {
+	width: 503px;
+	height: 2px;
+	background-color: var.$whitesmoke;
+}
+
+.form {
+	width: 504px;
+}
+
+.password {
+	padding-top: 10px;
+}
+
+.required {
+	@include text($size: 0.875rem, $weight: 400);
+
+	display: inline-block;
+	margin: 40px 0;
+}
+
+.button {
+	width: 100%;
+}
+
+.link {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.a {
+	@include text($cursor: pointer);
+
+	text-decoration: none;
+}
+
+.message {
+	@include message;
+}
