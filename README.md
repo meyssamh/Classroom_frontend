@@ -29,5 +29,5 @@ This project was originally a TDD project, but due to changes in the UI design, 
 
 To begin the project, start by running both the SQL Server and back-end module. Once you have completed the necessary setup, you can launch the project by executing the command `npm run dev` in the terminal. To obtain a build version, please run the command `npm run build`. The updated build version can be found in the *dist* folder. To run the build version, you can use the `npm run serve` command in your terminal.
 
-The UI file is placed in the `ui` folder. To access it, you can use Figma.
+The UI file is placed in the `ui-ux` folder. To access it, you can use Figma.
 
