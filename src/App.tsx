@@ -22,21 +22,6 @@ const App = (): JSX.Element => {
 	// HINT: I keep getting type error when i use lazy property; no solution yet!
 	return (
 		<Routes>
-			{/* <Route path={'/'} element={<React.Suspense><Signup /></React.Suspense>} />
-			<Route path={'login'} element={<React.Suspense><Login /></React.Suspense>} />
-			<Route path={'home'} element={<React.Suspense><Home /></React.Suspense>} />
-			<Route path={'class'} element={<React.Suspense><Class /></React.Suspense>} />
-			<Route path={'edit-class'} element={<React.Suspense><EditClass /></React.Suspense>} />
-			<Route path={'delete-class'} element={<React.Suspense><DeleteClass /></React.Suspense>} />
-			<Route path={'new-session'} element={<React.Suspense><NewSession /></React.Suspense>} />
-			<Route path={'select-edit-session'} element={<React.Suspense><SelectEditSession /></React.Suspense>} />
-			<Route path={'edit-session'} element={<React.Suspense><EditSession /></React.Suspense>} />
-			<Route path={'delete-session'} element={<React.Suspense><DeleteSession /></React.Suspense>} />
-			<Route path={'edit-student'} element={<React.Suspense><EditStudent /></React.Suspense>} />
-			<Route path={'delete-student'} element={<React.Suspense><DeleteStudent /></React.Suspense>} />
-
-			<Route path={'*'} element={<React.Suspense><Error /></React.Suspense>} /> */}
-
 			<Route path={'/'} element={<React.Suspense><Signup /></React.Suspense>} />
 			<Route path={'/login'} element={<React.Suspense><Login /></React.Suspense>} />
 			<Route element={<ProtectedRoute />}>

@@ -289,7 +289,6 @@ const Class = (): JSX.Element => {
 			{modalChildren}
 		</Modal>;
 
-	// TODO: check if the hint situation works correctly!
 	// Complete body element
 	const bodyContent = students.length > 0 ?
 		<section className={classes.body}>

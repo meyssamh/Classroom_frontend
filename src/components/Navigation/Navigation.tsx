@@ -23,7 +23,6 @@ const Navigation = (): JSX.Element => {
 		navigate('/home');
 	}
 
-	// TODO: clean everything at logout!
 	function handleLogoutClick (): void {
 		Cookies.remove('access_token');
 		localStorage.clear();
